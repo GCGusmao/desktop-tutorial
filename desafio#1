@@ -26,11 +26,8 @@ operador = input('Digite o operador desejado. As opções são as seguintes. \n'
                  '- Raiz: digite [r]\n'
                  'Opção desejada: ')
 
-if not operador == '+' or operador == '-' or operador == '*' or operador == '/':
-    print('Infelizmente você digitou um valor inválido e o cógigo se auto-destruirá :(')
-    exit()
-
-if not operador == '^' or operador == 'r' or operador == 'R':
+if operador != '+' and operador != '-' and operador != '*' and operador != '/' and operador != '^' \
+        and operador != 'r' and operador != 'R':
     print('Infelizmente você digitou um valor inválido e o cógigo se auto-destruirá :(')
     exit()
 
